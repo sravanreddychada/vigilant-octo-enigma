@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Colony Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>🏡 Colony Dashboard</h1>
+
+  <!-- Summary Cards -->
+  <div class="cards">
+    <div class="card">
+      <h2 id="totalOwners">0</h2>
+      <p>Total Owners</p>
+    </div>
+
+    <div class="card">
+      <h2 id="totalDue">₹0</h2>
+      <p>Total Due</p>
+    </div>
+
+    <div class="card">
+      <h2 id="pendingCount">0</h2>
+      <p>Pending</p>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <input type="text" id="search" placeholder="Search owner or house..." />
+
+  <!-- Table -->
+  <div class="table-container">
+    <table id="duesTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>House</th>
+          <th>Due</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
